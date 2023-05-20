@@ -1,0 +1,75 @@
+<!-- 
+  <!DOCTYPE html>
+<html>
+<head>
+  
+    <link rel="stylesheet" href="form.css">
+<title>The Form</title>
+
+</head>
+<body>
+ 
+<div class="postion">
+  <h1 >Restration Form</h1>
+<form action="db.php" method="post" method="POST" action="register.php">
+  
+
+    
+    <input type="text" id="name" name="name"placeholder="Full Name" pattern="[a-z-' ']{6,50}" required><br><br>
+    
+    <input type="tel" id="phone" name="phone"pattern="^01[0-2,5]\d{8}$"required placeholder="phone" maxlength="11"> <br><br>
+    
+    
+    <input type="text" id="Address" name="Address"placeholder="Address" required><br><br>
+    
+    <input type="email" id="email" name="email"placeholder="email" required> <br><br>
+   
+    <input type="password" placeholder="password" id="password" name= "password"required placeholder="password"  pattern="^(?=.[0-9])(?=.[a-z])(?=.*[A-Z]){8,15}$"><br><br>
+    
+    <input type="password" placeholder="Confirm Password" id="confirm_password" name="confirm_password" required placeholder="Confirm password"><br><br>
+   
+    <div class="Birth">
+    <input type="date" id="birthday" name="birthday"placeholder="Birthday" required ><br><br>
+  </div>
+
+    <button type="submit" class="pure-button pure-button-primary">Confirm</button>
+</fieldset>
+
+  </form>
+</div>
+<script>  
+  function verifyPassword() {  
+    var pw = document.getElementById("password").value;  
+    
+     
+   //minimum password length validation  
+    if(pw.length < 8) {  
+       document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+       return false;  
+    }  
+    
+    
+  //maximum length of password validation  
+    if(pw.length > 15) {  
+       document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+       return false;  
+    } else {  
+       alert("Password is correct");  
+    }  
+  }  
+
+  //////////////////////////////////////////////////////////////////////////////////////
+  function matchPassword() {  
+  var pw1 = document.getElementById("password");  
+  var pw2 = document.getElementById("confirm_password");  
+  if(pw1 != pw2)  
+  {   
+    alert("Passwords did not match");  
+  } else {  
+    alert("Password created successfully");  
+  }  
+} 
+  </script>  
+
+</body>
+</html> -->
