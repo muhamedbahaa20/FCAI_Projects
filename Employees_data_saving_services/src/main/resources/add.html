@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System - Add Student</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Student Management System - Add Student</h1>
+
+<div>
+    <label for="id">ID:</label>
+    <input type="number" id="id" name="id">
+</div>
+
+<div>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName">
+</div>
+
+<div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName">
+</div>
+
+<div>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+</div>
+
+<div>
+    <label for="gpa">GPA:</label>
+    <input type="number" id="gpa" name="gpa">
+</div>
+
+<div>
+    <label for="level">Level:</label>
+    <select id="level" name="level">
+        <option value="Freshman">Freshman</option>
+        <option value="Sophomore">Sophomore</option>
+        <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+    </select>
+</div>
+
+<div>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address">
+</div>
+
+<div>
+    <button onclick="saveStudent()">Save</button>
+    <button onclick="window.location.href='index.html'">Cancel</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
